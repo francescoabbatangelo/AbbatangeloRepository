@@ -14,14 +14,13 @@ body, h1 {
     color: #ffffff;
     padding-left: 50px;
     padding-bottom: 15px;
-    width: 100%;
+
 }
 
 #hero {
     background-color: #b8e7ff;
     padding-left: 50px;
     padding-bottom: 50px;
-    width: 100%;
 }
 
 #p_hero {
@@ -194,6 +193,12 @@ hr {
         width: 100%;
         padding-left: 50px;
     }
+
+    #cookie_div {
+
+
+    }
+
 
 }
 
