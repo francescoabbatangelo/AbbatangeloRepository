@@ -1,0 +1,237 @@
+html {
+    color: #222;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body, h1 {
+    margin: 0;
+}
+
+#header {
+    padding-top: 15px;
+    background-color: #102434;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+#hero {
+    background-color: #b8e7ff;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+#p_hero {
+    padding-right: 20%;
+}
+
+#h1_hero {
+    padding-top: 50px;
+}
+
+#div_img_btn {
+    float: left;
+}
+
+#img_btn {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+#a_img_btn {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 5px 5px 5px 5px;
+}
+
+#slides {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+#myarticle1 {
+    float: left;
+    width: 32%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+#myarticle2 {
+    float: left;
+    width: 32%;
+    padding-top: 50px;
+}
+
+#myarticle3 {
+    float: left;
+    width: 32%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#myarticle4 {
+    width: 33%;
+    padding-left: 50px;
+}
+
+footer {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#cookie_div {
+    background-color: #102434;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#here {
+    text-decoration: none;
+    color: #1558fc;
+}
+
+.central_part h1 {
+    padding-bottom: 20px;
+}
+
+.central_part p {
+    padding-right: 32%;
+}
+
+.central_part img {
+    width: 80%;
+    height: 80%;
+    padding-bottom: 15px;
+}
+
+hr {
+    display: block;
+    margin: 50px 50px 20px;
+    border: 1px solid #f3f3f3;
+}
+
+.myclass_btn_tech {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.myclass_btn134 {
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: #000000;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.myclass_btn2 {
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #myarticle1 {
+        float: left;
+        width: 100%;
+        padding-left: 50px;
+        padding-top: 50px;
+
+    }
+
+    #myarticle2 {
+        float: left;
+        width: 100%;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    #myarticle3 {
+        float: left;
+        width: 100%;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #myarticle4 {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    #myarticle1 {
+        float: left;
+        width: 30%;
+        padding-left: 50px;
+        padding-top: 50px;
+
+    }
+
+    #myarticle2 {
+        float: left;
+        width: 30%;
+
+        padding-top: 50px;
+    }
+
+    #myarticle3 {
+        float: left;
+        width: 30%;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #myarticle4 {
+        width: 30%;
+        padding-left: 50px;
+    }
+
+    #cookie_div {
+
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+
