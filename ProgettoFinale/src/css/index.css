@@ -17,16 +17,29 @@ body, h1 {
 
 }
 
+/*
 #hero {
     background-color: #b8e7ff;
     padding-left: 50px;
     padding-bottom: 50px;
 }
-
-#p_hero {
-    padding-right: 20%;
+*/
+.jumbotron {
+    background-color: #b8e7ff;
+    padding-left: 50px;
+    padding-bottom: 50px;
 }
 
+.display-4 {
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.p_hero {
+    padding-right: 15%;
+}
+
+/*
 #h1_hero {
     padding-top: 50px;
 }
@@ -34,7 +47,13 @@ body, h1 {
 #div_img_btn {
     float: left;
 }
+*/
+.hero_btn {
+    margin-right: 10px;
+    border-color: #337AB7;
+}
 
+/*
 #img_btn {
     display: block;
     height: 30px;
@@ -65,32 +84,35 @@ body, h1 {
 
 #myarticle1 {
     float: left;
-    width: 32%;
-    padding-left: 50px;
-    padding-top: 50px;
+    width: 33%;
+
 }
 
 #myarticle2 {
     float: left;
-    width: 32%;
-    padding-top: 50px;
+    width: 33%;
+
 }
 
 #myarticle3 {
     float: left;
-    width: 32%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    width: 33%;
+
 }
 
 #myarticle4 {
     width: 33%;
-    padding-left: 50px;
-}
 
+}
+*/
 footer {
     padding-left: 50px;
     padding-bottom: 20px;
+}
+
+#here {
+    text-decoration: none;
+    color: #1558fc;
 }
 
 #cookie_div {
@@ -99,22 +121,22 @@ footer {
     padding-left: 50px;
     padding-bottom: 15px;
     padding-top: 15px;
+
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1;
 }
 
-#here {
-    text-decoration: none;
-    color: #1558fc;
-}
+/*
 
 .central_part h1 {
     padding-bottom: 20px;
 }
 
 .central_part p {
-    padding-right: 32%;
+
+    padding-top: 3%;
 }
 
 .central_part img {
@@ -122,13 +144,28 @@ footer {
     height: 80%;
     padding-bottom: 15px;
 }
-
+*/
 hr {
     display: block;
     margin: 50px 50px 20px;
     border: 1px solid #f3f3f3;
 }
 
+.remove_background {
+    background-image: none;
+
+}
+
+.color_white {
+    fill: white;
+}
+
+.row {
+    width: 100%;
+    margin:0;
+}
+
+/*
 .myclass_btn_tech {
     background-color: #008CBA;
     border: none;
@@ -196,9 +233,7 @@ hr {
 
     #cookie_div {
 
-
     }
-
 
 }
 
@@ -239,4 +274,4 @@ hr {
     }
 }
 
-
+*/

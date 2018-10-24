@@ -4,54 +4,67 @@
     <meta charset="UTF-8">
     <title>Frank Abba Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
-    <link rel="stylesheet" type="text/css" href="src/css/index.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="src/css/index.css">
 </head>
 <body>
 
-<div id="cookie_div">
-    <div>This is a cookie policy click <a id="here">here</a> to
-        close it.
+<div class="row">
+    <div id="cookie_div" class="col-lg-12">
+        <div>This is a cookie policy click <a id="here">here</a> to
+            close it.
+        </div>
     </div>
 </div>
-
 <header>
-    <div id="header">Frank Abba Project</div>
+    <div id="header">Project Name</div>
 </header>
 
+
 <!-- Hero -->
-<div id="hero">
-    <div id="h1_hero">
-        <h1> Hello, Frank!</h1>
-    </div>
-    <p id="p_hero">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tempor diam. Maecenas eget faucibus nisl.
+<div class="jumbotron hero">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="p_hero"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tempor diam. Maecenas eget
+        faucibus nisl.
         Donec varius lacinia quam, in vestibulum lectus rutrum eu. Fusce ac libero vel ipsum dignissim porttitor. In
-        porttitor porta lacus, quis aliquam elit fringilla pulvinar.
-    </p>
+        porttitor porta lacus, quis aliquam elit fringilla pulvinar.</p>
 
-    <div>
-        <div id="div_img_btn">
-            <a id="a_img_btn" href="https://www.google.com/">
-                <img id="img_btn" src="src/img/github.png">
-            </a>
-        </div>
-        <div>
-            <a id="slides" href="https://www.google.com/"><b>Slides >> </b></a>
-        </div>
+    <p class="lead">
+    <div id="div_img_btn">
+        <a class="btn btn-primary remove_background btn-md hero_btn" href="https://www.google.com/">
+            <svg height="27" class="octicon octicon-mark-github color_white" viewBox="0 0 16 16" version="1.1"
+                 width="27"
+                 aria-hidden="true">
+                <path fill-rule="evenodd"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+        </a>
     </div>
-
+    <div>
+        <a class="btn btn-primary remove_background btn-lg hero_btn" href="https://www.google.com/"><b>Slides
+            >> </b></a>
+    </div>
+    </p>
 </div>
 <!-- End Hero -->
 
 
 <!-- Parte Centrale -->
-<div class="central_part">
-    <article id="myarticle1">
-        <h1 class="h1Article">Article Title 1</h1>
+<div class="row ">
+    <article class="col-lg-4 col-sm-6 col-xs-12">
+        <h1>Article Title 1</h1>
         <img src="src/img/immagine1.jpeg">
         <div>
-            <a class="myclass_btn_tech" href="https://www.google.com/"> tech </a>
+            <span class="btn btn-primary remove_background btn-xs"> tech </span>
         </div>
         <p>
             Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at
@@ -59,14 +72,14 @@
             elementum ultricies ligula vel suscipit.
         </p>
         <div>
-            <button id="like1" class="myclass_btn134">like</button>
+            <button id="like1" class="btn btn-default remove_background">like</button>
         </div>
     </article>
-    <article id="myarticle2">
+    <article class="col-lg-4 col-sm-6 col-xs-12">
         <h1>Article Title 2</h1>
         <img src="src/img/immagine2.jpeg">
         <div>
-            <a class="myclass_btn_tech" href="https://www.google.com/"> tech </a>
+            <span class="btn btn-primary remove_background btn-xs"> tech </span>
         </div>
         <p>
             Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at
@@ -74,14 +87,14 @@
             elementum ultricies ligula vel suscipit.
         </p>
         <div>
-            <button id="like2" class="myclass_btn2">like</button>
+            <button id="like2" class="btn btn-success remove_background">like</button>
         </div>
     </article>
-    <article id="myarticle3">
+    <article class="col-lg-4 col-sm-6 col-xs-12">
         <h1>Article Title 3</h1>
         <img src="src/img/immagine3.jpeg">
         <div>
-            <a class="myclass_btn_tech" href="https://www.google.com/">tech </a>
+            <span class="btn btn-primary remove_background btn-xs"> tech </span>
         </div>
         <p>
             Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at
@@ -89,14 +102,14 @@
             elementum ultricies ligula vel suscipit.
         </p>
         <div>
-            <button id="like3" class="myclass_btn134">like</button>
+            <button id="like3" class="btn btn-default remove_background">like</button>
         </div>
     </article>
-    <article id="myarticle4">
+    <article class="col-lg-4 col-sm-6 col-xs-12">
         <h1>Article Title 4</h1>
         <img src="src/img/immagine4.jpeg">
         <div>
-            <a class="myclass_btn_tech" href="https://www.google.com/">tech </a>
+            <span class="btn btn-primary remove_background btn-xs"> tech </span>
         </div>
         <p>
             Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at
@@ -104,7 +117,7 @@
             elementum ultricies ligula vel suscipit.
         </p>
         <div>
-            <button id="like4" class="myclass_btn134">like</button>
+            <button id="like4" class="btn btn-default remove_background">like</button>
         </div>
     </article>
 
@@ -120,5 +133,12 @@
 </footer>
 
 <script type="text/javascript" src="src/js/index.js"></script>
+
+<script>
+    $('*').ready(function () {
+        console.log("ciao")
+    });
+</script>
+
 </body>
 </html>
