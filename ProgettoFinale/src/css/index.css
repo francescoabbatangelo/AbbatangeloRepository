@@ -27,7 +27,7 @@ body, h1 {
 .jumbotron {
     background-color: #b8e7ff;
     padding-left: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 15%;
 }
 
 .display-4 {
@@ -39,6 +39,9 @@ body, h1 {
     padding-right: 15%;
 }
 
+.jumbotron a{
+    float:left;
+}
 /*
 #h1_hero {
     padding-top: 50px;
@@ -121,7 +124,6 @@ footer {
     padding-left: 50px;
     padding-bottom: 15px;
     padding-top: 15px;
-
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -164,6 +166,26 @@ hr {
     width: 100%;
     margin:0;
 }
+
+.row img {
+    width: 80%;
+    height: 80%;
+    padding-bottom: 15px;
+}
+
+.row h1 {
+    padding-bottom: 20px;
+}
+
+.row p {
+    padding-top: 3%;
+    padding-right: 20%;
+}
+
+.row article {
+    padding-bottom: 10%;
+}
+
 
 /*
 .myclass_btn_tech {
