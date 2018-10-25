@@ -1,20 +1,34 @@
-var i;
-for (i = 1; i < 5; i++) {
-    let str = "like" + i;
+const $=require('jquery');
 
-    document.getElementById(str).addEventListener("click", function () {
-        console.log(this);
-        if (document.getElementById(str).className === 'myclass_btn134') {
-            document.getElementById(str).className = 'myclass_btn2';
-        } else {
-            document.getElementById(str).className = 'myclass_btn134';
+$('*').ready(function () {
+
+    for (let i = 1; i <= 4; i++) {
+        $('#like' + i).on('click', function () {
+            if ($('#like' + i).hasClass("btn btn-default remove_background")) {
+                $('#like' + i).removeClass('btn btn-default remove_background').addClass('btn btn-success remove_background');
+            }
+            else if ($('#like' + i).hasClass("btn btn-success remove_background")) {
+                $('#like' + i).removeClass('btn btn-success remove_background').addClass('btn btn-default remove_background');
+            }
+        });
+    }
+
+    $('#here').on('click', function () {
+        $('#cookie_div').hide();
+    });
+
+    $.ajax({
+        type: "GET",
+        url: "/ProgettoFinale/src/json/data.json",
+
+        dataType: "json",
+        success: function (risposta) {
+            for (var i = 0; i < risposta.length; i++)
+                $("#sez" + (i + 1)).append(risposta[i].txt);
+        },
+        error: function () {
+            alert("Chiamata fallita!!!");
         }
     });
-}
-
-
-var here = document.getElementById("here");
-here.addEventListener("click", function () {
-    document.getElementById("cookie_div").style.display = 'none';
-});
-
+})
+;

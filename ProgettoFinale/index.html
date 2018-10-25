@@ -7,14 +7,9 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="src/css/index.css">
+
+
+    <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 </head>
 <body>
 
@@ -40,7 +35,7 @@
 
     <p class="lead">
     <div id="div_img_btn">
-        <a class="btn btn-primary remove_background btn-md hero_btn" href="https://www.google.com/">
+        <a class="btn btn-primary remove_background btn-md hero_btn" href="src/pages/pages1.html">
             <svg height="27" class="octicon octicon-mark-github color_white" viewBox="0 0 16 16" version="1.1"
                  width="27"
                  aria-hidden="true">
@@ -59,8 +54,8 @@
 
 
 <!-- Parte Centrale -->
-<div class="row ">
-    <article class="col-md-4 col-sm-6 col-xs-12">
+<section id="main" class="row">
+    <article id="a1" class="col-md-4 col-sm-6 col-xs-12">
         <h1>Article Title 1</h1>
         <img src="src/img/immagine1.jpeg">
         <div>
@@ -75,7 +70,7 @@
             <button id="like1" class="btn btn-default remove_background">like</button>
         </div>
     </article>
-    <article class="col-md-4 col-sm-6 col-xs-12">
+    <article id="a2" class="col-md-4 col-sm-6 col-xs-12">
         <h1>Article Title 2</h1>
         <img src="src/img/immagine2.jpeg">
         <div>
@@ -90,7 +85,7 @@
             <button id="like2" class="btn btn-success remove_background">like</button>
         </div>
     </article>
-    <article class="col-md-4 col-sm-6 col-xs-12">
+    <article id="a3" class="col-md-4 col-sm-6 col-xs-12">
         <h1>Article Title 3</h1>
         <img src="src/img/immagine3.jpeg">
         <div>
@@ -105,7 +100,7 @@
             <button id="like3" class="btn btn-default remove_background">like</button>
         </div>
     </article>
-    <article class="col-md-4 col-sm-6 col-xs-12">
+    <article id="a4" class="col-md-4 col-sm-6 col-xs-12">
         <h1>Article Title 4</h1>
         <img src="src/img/immagine4.jpeg">
         <div>
@@ -121,9 +116,18 @@
         </div>
     </article>
 
-</div>
+</section>
 <!-- End Parte Centrale -->
 
+<!-- Parte Centrale AJAX -->
+<section>
+    <p id="sez1"></p>
+    <p id="sez2"></p>
+    <p id="sez3"></p>
+    <p id="sez4"></p>
+
+</section>
+<!-- End Parte Centrale AJAX -->
 <hr>
 
 <footer>
@@ -132,13 +136,9 @@
     </div>
 </footer>
 
-<script type="text/javascript" src="src/js/index.js"></script>
+<script type="text/javascript" src="dist/js/app.min.js"></script>
 
-<script>
-    $('*').ready(function () {
-        console.log("ciao")
-    });
-</script>
+
 
 </body>
 </html>
