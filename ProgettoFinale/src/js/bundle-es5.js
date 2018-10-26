@@ -9939,12 +9939,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 		$('*').ready(function () {
 			var _loop = function _loop(i) {
-				$('#like' + i).on('click', function () {
-					if ($('#like' + i).hasClass("btn btn-default remove_background")) {
-						$('#like' + i).removeClass('btn btn-default remove_background').addClass('btn btn-success remove_background');
-					} else if ($('#like' + i).hasClass("btn btn-success remove_background")) {
-						$('#like' + i).removeClass('btn btn-success remove_background').addClass('btn btn-default remove_background');
-					}
+				var like = $('#like' + i);
+				like.on('click', function () {
+					like.toggleClass("btn btn-success remove_background");
 				});
 			};
 
@@ -9959,7 +9956,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			$.ajax({
 				type: "GET",
 				url: "/ProgettoFinale/src/json/data.json",
-
 				dataType: "json",
 				success: function success(risposta) {
 					for (var i = 0; i < risposta.length; i++) {
@@ -9967,7 +9963,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					}
 				},
 				error: function error() {
-					alert("Chiamata fallita!!!");
+					alert("Dati non caricati");
 				}
 			});
 		});
