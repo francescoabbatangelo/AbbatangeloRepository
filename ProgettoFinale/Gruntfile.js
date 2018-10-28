@@ -58,17 +58,12 @@ module.exports = function (grunt) {
 
 
     grunt.task.registerTask('develop', ['less', 'browserify', 'watch']);
-    //grunt.task.registerTask('build', ['cssmin', 'browserify', 'babel', 'uglify', 'serve']);
+    grunt.task.registerTask('build', ['cssmin', 'browserify', 'babel', 'uglify', 'serve']);
 
-    grunt.task.registerTask('passo1_js', ['browserify']);
-    grunt.task.registerTask('passo2_js', ['babel']);
-    grunt.task.registerTask('passo3_js', ['uglify']);
 
-    grunt.task.registerTask('less_css', ['less']);
-    grunt.task.registerTask('min_mix_css', ['cssmin']);
-
-    grunt.task.registerTask('js', ['browserify','babel','uglify']);
-    grunt.task.registerTask('css', ['less','cssmin']);
+    grunt.task.registerTask('js', ['browserify', 'babel', 'uglify']);
+    grunt.task.registerTask('css', ['less', 'cssmin']);
+    grunt.task.registerTask('complete', ['browserify', 'babel', 'uglify', 'less', 'cssmin']);
 };
 
 // cssmin: Minimizza il CSS

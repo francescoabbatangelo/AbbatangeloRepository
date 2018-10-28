@@ -1,97 +1,109 @@
-body, h1 {
+@header_background_color: #213A48;
+@hero_backround_color: #E5ECF6;
+@white: #ffffff;
+@cookie_backround_color: #384E5B;
+@link_color: #357CAF;
+@hr_border_color: #f3f3f3;
+@text-color: #223A48;
+
+.bluetext() {
+  color: @text-color;
+}
+
+body {
   margin: 0;
+
+  #cookie_div {
+    background-color: @cookie_backround_color;
+    color: @white;
+    padding: 1.5% 0 1.5% 5%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+
+    #here {
+      text-decoration: none;
+      color: @link_color;
+    }
+  }
+
+  header {
+    padding: 0.5% 0 0.5% 5%;
+    background-color: @header_background_color;
+    color: @white;
+  }
+
+  #hero {
+    background-color: @hero_backround_color;
+    margin-bottom: 3%;
+    padding-bottom: 4%;
+    h1 {
+      padding: 2% 0 0 5%;
+      margin: 0;
+      .bluetext();
+    }
+    p {
+      padding: 1% 0 0 5%;
+      .bluetext();
+    }
+
+    #btn {
+      padding-left: 5%;
+    }
+
+    #btn1, #btn2 {
+      margin-right: 0.5%;
+      float: left;
+    }
+  }
+
+  #main {
+    padding: 0 2% 0 5%;
+
+    article {
+      padding: 0 3% 1% 0;
+
+      h2 {
+        padding-bottom: 1%;
+        .bluetext();
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 4%;
+      }
+
+      p {
+        padding-top: 3%;
+        .bluetext();
+      }
+
+      span {
+        padding: 0.1% 1.5%;
+      }
+    }
+  }
+
+  hr {
+    display: block;
+    border: 1px solid @hr_border_color;
+    margin: 1.5% 5% 1.5%;
+  }
+
+  footer {
+    padding: 0 0 1.5% 5%;
+    .bluetext();
+  }
+
+  .remove_background {
+    background-image: none;
+  }
+
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+
 }
-
-header {
-  padding: 1.5% 0 1.5% 5%;
-  background-color: #102434;
-  color: #ffffff;
-}
-
-.jumbotron {
-  background-color: #b8e7ff;
-  padding-left: 5%;
-  padding-right: 10%;
-}
-
-.jumbotron h1 {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-#btn1, #btn2 {
-  margin-right: 1%;
-  border-color: #337AB7;
-  float: left;
-}
-
-.button_hero {
-  padding-bottom: 10%;
-}
-
-footer {
-  padding-left: 5%;
-  padding-bottom: 1.5%;
-}
-
-#here {
-  text-decoration: none;
-  color: #1558fc;
-}
-
-#cookie_div {
-  background-color: #102434;
-  color: #ffffff;
-  padding: 1% 0 1% 5%;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-hr {
-  display: block;
-  border: 1px solid #f3f3f3;
-  margin: 5% 5% 1.5%;
-}
-
-.remove_background {
-  background-image: none;
-
-}
-
-.color_white {
-  fill: white;
-}
-
-.row {
-  width: 100%;
-  margin: 0;
-}
-
-.row img {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 4%;
-}
-
-.row h1 {
-  padding-bottom: 5%;
-}
-
-.row p {
-  padding-top: 3%;
-  padding-right: 20%;
-}
-
-.row article {
-  padding-bottom: 4%;
-  padding-left: 0;
-}
-
-#main {
-  padding-left: 5%;
-}
-
-
-
