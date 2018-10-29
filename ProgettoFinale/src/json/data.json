@@ -1,28 +1,28 @@
 [
   {
     "title": "Article Title 1",
-    "image": "src/img/immagine1.jpeg",
+    "image": "../src/img/immagine1.jpeg",
     "tech": "tech",
     "text": "Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at tincidunt nisi consectetur molestie. Mauris metus augue, iaculis eu risus id, commodo vestibulum mi. Fusce elementum ultricies ligula vel suscipit.",
     "btn": false
   },
   {
     "title": "Article Title 2",
-    "image": "src/img/immagine2.jpeg",
+    "image": "../src/img/immagine2.jpeg",
     "tech": "tech",
     "text": "Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at tincidunt nisi consectetur molestie. Mauris metus augue, iaculis eu risus id, commodo vestibulum mi. Fusce elementum ultricies ligula vel suscipit.",
     "btn": true
   },
   {
     "title": "Article Title 3",
-    "image": "src/img/immagine3.jpeg",
+    "image": "../src/img/immagine3.jpeg",
     "tech": "tech",
     "text": "Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at tincidunt nisi consectetur molestie. Mauris metus augue, iaculis eu risus id, commodo vestibulum mi. Fusce elementum ultricies ligula vel suscipit.",
     "btn": false
   },
   {
     "title": "Article Title 4",
-    "image": "src/img/immagine4.jpeg",
+    "image": "../src/img/immagine4.jpeg",
     "tech": "tech",
     "text": "Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at tincidunt nisi consectetur molestie. Mauris metus augue, iaculis eu risus id, commodo vestibulum mi. Fusce elementum ultricies ligula vel suscipit.",
     "btn": false

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Frank Abba Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
-    <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
 
@@ -29,7 +29,7 @@
         Donec varius lacinia quam, in vestibulum lectus rutrum eu. Fusce ac libero vel ipsum dignissim porttitor.</p>
     <div id="btn" class="col-md-12 col-sm-12 col-xs-12">
 
-        <a id="btn1" class="btn btn-primary remove_background btn-lg" href="src/pages/pages1.html">
+        <a id="btn1" class="btn btn-primary remove_background btn-lg" href="../src/pages/pages1.html">
             <svg height="15" class="octicon octicon-mark-github color_white" viewBox="0 0 16 16" version="1.1"
                  width="15"
                  aria-hidden="true" fill="white">
@@ -38,7 +38,7 @@
             </svg>
         </a>
 
-        <a id="btn2" class="btn btn-primary remove_background btn-lg" href="src/pages/pages2.html">Slides »</a>
+        <a id="btn2" class="btn btn-primary remove_background btn-lg" href="../src/pages/pages2.html">Slides »</a>
 
     </div>
 </div>
@@ -47,6 +47,25 @@
 
 <!-- Parte Centrale -->
 <section id="main" class="row">
+    <script id="template" type="text/html">
+        {{#.}}
+        <article class="col-md-4 col-sm-6 col-xs-12">
+            <h2>{{title}}</h2>
+            <img src={{image}}>
+            <div>
+                <span class="btn btn-primary remove_background btn-xs"> {{tech}} </span>
+            </div>
+            <p>{{text}}</p>
+            <div>
+                <button id="btn_{{id}}" class="btn btn-default remove_background like">like</button>
+            </div>
+        </article>
+        {{/.}}
+
+
+
+
+    </script>
 </section>
 <!-- End Parte Centrale -->
 <hr>
@@ -56,6 +75,6 @@
         © 2018 Company, Inc.‎
     </div>
 </footer>
-<script type="text/javascript" src="dist/js/app.min.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
 </body>
 </html>
