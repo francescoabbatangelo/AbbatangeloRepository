@@ -1,51 +1,67 @@
-const $ = require('jquery');
+var $ = window.jQuery = require('jquery');
 const Mustache = require('mustache');
+var bootstrap = require('bootstrap');
+const sli = require('slick-carousel');
 $('*').ready(function () {
-    var n_elem;
+    var n_len;
     $.ajax({
         type: "GET",
-        url: "/ProgettoFinale/src/json/data.json",
+        url: "/res/all",
         dataType: "json",
         success: function (risposta) {
-            n_elem = risposta.length;
-            for (let i = 0; i < n_elem; i++) {
-                var btn;
-                if (risposta[i].btn) {
-                    btn = "btn btn-success remove_background";
+            n_len = risposta.length;
+            let temp = $('#template').html();
+            let output = Mustache.render(temp, risposta);
+            $('#main').append(output);
+            for (let i = 0; i < risposta.length; i++) {
+                if (risposta[i].btn === "true") {
+                    $('#btn_' + (i + 1)).addClass("btn btn-success remove_background like");
                 } else {
-                    btn = "btn btn-default remove_background";
+                    $('#btn_' + (i + 1)).addClass("btn btn-default remove_background like")
                 }
-                let temp =
-                    ' <article id="a' + (i + 1) + '" class="col-md-4 col-sm-6 col-xs-12">' +
-                    ' <h2>{{title}}</h2>' +
-                    ' <img src={{image}}>' +
-                    ' <div>' +
-                    ' <span class="btn btn-primary remove_background btn-xs"> {{tech}} </span>' +
-                    ' </div>' +
-                    ' <p>{{text}}' +
-                    ' </p>' +
-                    ' <div>' +
-                    ' <button id="like' + (i + 1) + '" class="' + btn + '">like</button>' +
-                    ' </div>' +
-                    ' </article>';
-                let output = Mustache.render(temp, risposta[i]);
-                $('#main').append(output);
             }
         },
         error: function () {
             alert("Errore nel caricamento dei dati");
         },
         complete: function () {
-            for (let i = 0; i < n_elem; i++) {
-                $('#like' + (i + 1)).on('click', function () {
-                    $('#like' + (i + 1)).toggleClass("btn-success");
+            for (let i = 0; i < n_len; i++) {
+                $('#btn_' + (i + 1)).on('click', function () {
+                    $('#btn_' + (i + 1)).toggleClass("btn-success");
+                    let but;
+                    if ($('#btn_' + (i + 1)).attr('class').includes("btn-success")) {
+                        but = "true";
+                    }
+                    else if ($('#btn_' + (i + 1)).attr('class').includes("btn-default")) {
+                        but = "false";
+                    }
+                    $.ajax({
+                        type: "POST",
+                        url: "/modify/",
+                        data: {btn: but, id: (i + 1)},
+                        dataType: "json",
+                        success: function () {
+
+                        }
+                    });
                 });
             }
         }
     });
 
+
     $('#here').on('click', function () {
         $('#cookie_div').hide();
+    });
+
+    $('.slide').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000
     });
 })
 ;
