@@ -22,7 +22,7 @@
       "image": "https://www.engage.it/wp-content/uploads/2017/10/teads-survey-600x400.jpg",
       "tech": "tech",
       "text": "Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at tincidunt nisi consectetur molestie. Mauris metus augue, iaculis eu risus id, commodo vestibulum mi. Fusce elementum ultricies ligula vel suscipit.",
-      "btn": "false"
+      "btn": "true"
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "image": "https://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/302b6213-3901-11e8-903c-8d977599e803_600x400.png",
       "tech": "tech",
       "text": "Suspendisse nunc tortor, condimentum in tortor eget, rutrum aliquet tellus. Integer congue nisi odio, at tincidunt nisi consectetur molestie. Mauris metus augue, iaculis eu risus id, commodo vestibulum mi. Fusce elementum ultricies ligula vel suscipit.",
-      "btn": "true"
+      "btn": "false"
     }
   ]
 }

@@ -1,5 +1,7 @@
-const $ = require('jquery');
+var $ = window.jQuery = require('jquery');
 const Mustache = require('mustache');
+var bootstrap = require('bootstrap');
+const sli = require('slick-carousel');
 $('*').ready(function () {
     var n_len;
     $.ajax({
@@ -39,6 +41,7 @@ $('*').ready(function () {
                         data: {btn: but, id: (i + 1)},
                         dataType: "json",
                         success: function () {
+
                         }
                     });
                 });
@@ -49,6 +52,16 @@ $('*').ready(function () {
 
     $('#here').on('click', function () {
         $('#cookie_div').hide();
+    });
+
+    $('.slide').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000
     });
 })
 ;
