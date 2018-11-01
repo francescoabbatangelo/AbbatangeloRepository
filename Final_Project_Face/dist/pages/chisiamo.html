@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it" class="full-height">
+<head>
+    <meta charset="UTF-8">
+    <title>Face Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark morpheus-den-gradient">
+                <a class="navbar-brand" href="../index.html"><strong><img src="../img/pippo.png"
+                                                                          style="width: 200px; height: 50px;"></strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><b>Chi siamo</b><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/lavori.html"><b>I nostri lavori</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+</div>
+<section id="home" class="team-section text-center my-5">
+    <h2 class="h1-responsive font-weight-bold my-5">La nostra azienda</h2>
+    <p class="grey-text w-responsive mx-auto mb-5">F.A.C.E. VR nasce nel 2012, dall’idea di un team giovane e
+        dinamico che sviluppa con passione strategie software e ingegneristiche efficaci. leader nello sviluppo e
+        vendita di visori per la Realtà Virtuale la nostra azienda offre un pacchetto completo per realizzare, gestire,
+        pubblicare e condividere tour virtuali. Con strumenti dedicati per trasformare la realtà virtuale in uno
+        strumento di promozione e di vendita veramente efficace. La licenza software di F.A.C.E. VR dalla durata di un
+        anno compresa nel pacchetto, attiva: 1 software Creator per creare i contenuti, 1 software Controller per
+        gestire il Tour guidando il cliente con il tablet e 1 software Explorer per visualizzare i contenuti con
+        smartphone e visore</p>
+
+    <div id="main_people" class="row">
+        <script id="template" type="text/html">
+            {{#.}}
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                <div class="avatar mx-auto">
+                    <img src={{image}} class="rounded-circle z-depth-1"
+                         alt="Sample avatar">
+                </div>
+                <h5 class="font-weight-bold mt-4 mb-3">{{fullname}}</h5>
+                <p class="text-uppercase blue-text"><strong>{{title}}</strong></p>
+                <p class="grey-text">{{cita}}</p>
+                <ul class="list-unstyled mb-0">
+                    <!-- Facebook -->
+                    <a class="p-2 fa-lg fb-ic">
+                        <i class="fa fa-facebook blue-text"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="p-2 fa-lg tw-ic">
+                        <i class="fa fa-twitter blue-text"> </i>
+                    </a>
+                    <!-- Instagram -->
+                    <a class="p-2 fa-lg ins-ic">
+                        <i class="fa fa-instagram blue-text"> </i>
+                    </a>
+                </ul>
+            </div>
+            {{/.}}
+        </script>
+    </div>
+</section>
+
+
+<div id="carousel" class="row">
+    <div class="col-md-1 col-sm-10 col-xs-12">
+    </div>
+    <div class="col-md-10 col-sm-10 col-xs-12">
+        <div class="slide">
+            <div><img
+                    src="../img/noi.jpg">
+            </div>
+            <div><img
+                    src="../img/noi22.jpg">
+            </div>
+            <div><img
+                    src="../img/noi32.jpg">
+            </div>
+            <div><img
+                    src="../img/noi52.jpg">
+            </div>
+            <div><img
+                    src="../img/noi62.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1 col-sm-10 col-xs-12">
+    </div>
+</div>
+
+
+<hr>
+
+
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-4 mr-auto my-md-4 my-0 mt-4 mb-1">
+                <h5 class="font-weight-bold text-uppercase mb-4">Realtà virtuale: un sogno ad occhi aperti!</h5>
+                <p>Il futuro non è solo 3D, ma diventa un’esperienza sensazionale, coinvolgente e interattiva capace di
+                    veicolare un nuovo modo per entrare in contatto con nuovi spazi, per conoscere e capire, per
+                    interagire e sperimentare. Tutto questo, e molto altro, immergendosi completamente in scenari
+                    virtuali attraverso una realistica percezione degli elementi, dello spazio e delle profondità.</p>
+            </div>
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <div class="col-lg-2 col-md-1"></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                <h5 class="font-weight-bold text-uppercase mb-4">L'azienda</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <a href="../index.html">Home</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="../pages/chisiamo.html">Chi siamo</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="../pages/lavori.html">I nostri lavori</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <hr class="clearfix w-100 d-md-none">
+
+
+            <div class="col-lg-2 col-md-3 col-sm-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <!-- Contact details -->
+                <h5 class="font-weight-bold text-uppercase mb-4">Contatti</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <i class="fa fa-home mr-3"></i>Difesa Grande 52/B</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i> info@facevr.com</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i> +39 0825825013</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="fa fa-print mr-3"></i> +39 3343079015</p>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> FaceVR.com</a>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/app.min.js"></script>
+</body>
+</html>

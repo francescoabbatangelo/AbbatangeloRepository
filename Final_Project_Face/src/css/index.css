@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+body #cookie_div {
+  color: #ffffff;
+  padding: 1% 0 1% 5%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+body #cookie_div #here {
+  text-decoration: none;
+  color: #1a1380;
+}
+body #carousel {
+  margin-top: 7%;
+}
+body #carousel .slide img {
+  width: 100%;
+  height: 50%;
+}
+body #home {
+  padding-top: 2%;
+}
+body .news {
+  margin-bottom: 5%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.row {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.col-md-12,
+.col-sm-12,
+.col-xs-12 {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.jum {
+  padding-right: 0;
+  padding-left: 0;
+}

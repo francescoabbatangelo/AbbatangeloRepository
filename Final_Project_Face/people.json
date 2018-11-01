@@ -1,0 +1,32 @@
+{
+  "people": [
+    {
+      "fullname": "Francesco Abbatangelo",
+      "age": "27",
+      "title": "Ingegnere Informatico",
+      "image": "../img/fra.jpg",
+      "cita": "Lo Stato dà un posto. L'impresa privata dà un lavoro."
+    },
+    {
+      "fullname": "Angela Di Pietro",
+      "age": "26",
+      "title": "Ingegnere Civile",
+      "image": "../img/ang.jpg",
+      "cita": "“Devi amare ciò che fai per volerlo fare ogni giorno.”"
+    },
+    {
+      "fullname": "Chiara Annicchiarico Petruzzelli",
+      "age": "28",
+      "title": "Ingegnere Biomedico",
+      "image": "../img/ch.png",
+      "cita": "“L'inizio è la parte più importante del lavoro.”"
+    },
+    {
+      "fullname": "Emanuele Avallone",
+      "age": "26",
+      "title": "Ingegnere Biomedico",
+      "image": "../img/eman.jpg",
+      "cita": "“La pigrizia può sembrare attraente, ma il lavoro ti da soddisfazione.”"
+    }
+  ]
+}
