@@ -1,0 +1,22 @@
+{
+  "article": [
+    {
+      "id": "1",
+      "title": "VR Tour",
+      "image": "img/14.jpg",
+      "text": "Ti piacerebbe viaggiare nel tempo e nello spazio comodamente dal tuo divano? Oggi puoi"
+    },
+    {
+      "id": "2",
+      "title": "VR: e se non fosse solo un gioco?",
+      "image": "img/db.jpg",
+      "text": "Benvenuto nella piattaforma videoludica per antonomasia. Se non l’hai già fatto iscriviti a Face ed inizia a giocare."
+    },
+    {
+      "id": "3",
+      "title": "VR e medicina",
+      "image": "img/index_3.jpg",
+      "text": "Siete giovani aspiranti medici e volete approcciare al mondo della medicina?"
+    }
+  ]
+}
